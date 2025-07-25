@@ -1,0 +1,56 @@
+{
+  "agents": [
+    {
+      "name": "Grace",
+      "description": "Elderly companion AI agent for FamilyConnect",
+      "version": "1.0.0",
+      "author": "FamilyConnect AI",
+      "endpoint": "http://localhost:8001",
+      "health_check": "http://localhost:8001/health",
+      "api_type": "openai_compatible",
+      "capabilities": [
+        "emotional_support",
+        "health_monitoring",
+        "companionship",
+        "elderly_care"
+      ],
+      "model": "grace-agent",
+      "personality": "warm_grandmother",
+      "target_users": [
+        "elderly",
+        "seniors"
+      ],
+      "integration": {
+        "chat_completions": "/v1/chat/completions",
+        "health": "/health",
+        "info": "/agent/info"
+      }
+    },
+    {
+      "name": "Alex",
+      "description": "Family coordinator AI agent for FamilyConnect",
+      "version": "1.0.0",
+      "author": "FamilyConnect AI",
+      "endpoint": "http://localhost:8002",
+      "health_check": "http://localhost:8002/health",
+      "api_type": "openai_compatible",
+      "capabilities": [
+        "family_coordination",
+        "care_management",
+        "emergency_response",
+        "health_monitoring"
+      ],
+      "model": "alex-agent",
+      "personality": "professional_coordinator",
+      "target_users": [
+        "caregivers",
+        "family_members"
+      ],
+      "integration": {
+        "chat_completions": "/v1/chat/completions",
+        "health": "/health",
+        "info": "/agent/info"
+      }
+    }
+  ]
+}

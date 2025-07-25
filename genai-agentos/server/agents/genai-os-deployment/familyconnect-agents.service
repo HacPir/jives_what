@@ -1,0 +1,17 @@
+[Unit]
+Description=FamilyConnect Agents for GenAI OS
+After=network.target
+
+[Service]
+Type=simple
+User=genai
+WorkingDirectory=/opt/familyconnect-agents
+ExecStart=/opt/familyconnect-agents/start-agents.sh
+Restart=always
+RestartSec=10
+Environment=OPENAI_API_KEY=
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
