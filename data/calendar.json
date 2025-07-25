@@ -1,0 +1,86 @@
+[
+    {
+        "id": 6209,
+        "titre": "Promenade en famille",
+        "type": "Famille",
+        "date": "2025-07-28 10:00:00",
+        "description": "Randonnée autour du lac de Bournazel",
+        "localisation": "Adresse 1 rue, Ville"
+    },
+    {
+        "id": 2111,
+        "titre": "Match de foot",
+        "type": "Sport",
+        "date": "2025-07-29 14:00:00",
+        "description": "Match de foot contre Limoges",
+        "localisation": "Adresse 74 rue, Ville"
+    },
+    {
+        "id": 6186,
+        "titre": "Rendez-vous Famille",
+        "type": "Famille",
+        "date": "2025-08-04 19:00:00",
+        "description": "Anniversaire de Laeticia",
+        "localisation": "Adresse 5 rue, Ville"
+    },
+    {
+        "id": 9927,
+        "titre": "Rendez-vous Sport",
+        "type": "Sport",
+        "date": "2025-09-02 16:30:00",
+        "description": "Match de foot contre Bordeaux",
+        "localisation": "Adresse 9 rue, Ville"
+    },
+    {
+        "id": 7572,
+        "titre": "Rendez-vous Médecin",
+        "type": "Santé",
+        "date": "2025-10-01 14:30:00",
+        "description": "Voir le pneumologue",
+        "localisation": "Adresse 88 rue, Ville"
+    },
+    {
+        "id": 1406,
+        "titre": "Rendez-vous Médecin",
+        "type": "Santé",
+        "date": "2025-08-06 10:50:00",
+        "description": "Ceci est un rendez-vous chez le kiné",
+        "localisation": "Adresse 57 rue, Ville"
+    },
+    {
+        "id": 1300,
+        "titre": "Cinéma",
+        "type": "M\u00e9decin",
+        "date": "2025-07-22 21:30:00",
+        "description": "Voir le film Titanic 2",
+        "localisation": "Adresse 34 rue, Ville"
+    },
+    {
+        "id": 3283,
+        "titre": "Sortie avec Michael et Marie",
+        "type": "Social",
+        "date": "2025-07-24 12:30:00",
+        "description": "Prendre cadeau anniversaire et réserver restaurant",
+        "localisation": "Adresse 15 rue, Ville"
+    },
+    {
+        "id": 7643,
+        "titre": "Réunion avec John Bro",
+        "type": "Travail",
+        "date": "2025-08-04 15:00:00",
+        "description": "Réunion pour concrétiser le nouveau projet.",
+        "localisation": "Adresse 94 rue, Ville"
+    },
+    {
+        "id": 6949,
+        "titre": "Rendez-vous Médecin",
+        "type": "Santé",
+        "date": "2025-07-18 18:00:00",
+        "description": "Rendez-vous chez le cardiologue.",
+        "localisation": "Adresse 23 rue, Ville"
+    }
+<<<<<<< HEAD
+]
+=======
+]
+>>>>>>> 105f2ca28f2c8d5cc20dc1224055068bb84f1d54

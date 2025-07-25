@@ -1,0 +1,44 @@
+{
+  "birthdays": [
+    {
+      "name": "Sarah Johnson",
+      "relationship": "granddaughter",
+      "date": "2024-12-19",
+      "age": 8,
+      "interests": ["art", "reading", "animals"],
+      "notes": "Loves drawing and painting"
+    },
+    {
+      "name": "Michael Chen",
+      "relationship": "son",
+      "date": "2025-07-13",
+      "age": 35,
+      "interests": ["cooking", "travel", "photography"],
+      "notes": "Lives in another city, works as a chef"
+    },
+    {
+      "name": "Emma Davis",
+      "relationship": "daughter",
+      "date": "2024-12-21",
+      "age": 32,
+      "interests": ["yoga", "gardening", "music"],
+      "notes": "Recently moved closer, visits weekly"
+    },
+    {
+      "name": "Jeremy Marx",
+      "relationship": "daddy",
+      "date": "2025-07-14",
+      "age": 32,
+      "interests": ["yoga", "gardening", "music"],
+      "notes": "Recently moved closer, visits weekly"
+    }
+  ],
+  "events": [
+    {
+      "name": "Family Christmas Dinner",
+      "date": "2024-12-25",
+      "type": "holiday",
+      "notes": "Annual family gathering"
+    }
+  ]
+} 
