@@ -1,0 +1,101 @@
+# Add this to your main docker-compose.yml or run separately
+# This integrates FamilyConnect agents with your GenAI OS
+
+version: '3.8'
+
+networks:
+  local-genai-network:
+    external: true
+
+services:
+  # FamilyConnect Backend (connects to your Replit app)
+  familyconnect-backend:
+    image: nginx:alpine
+    container_name: familyconnect-backend
+    command: |
+      sh -c "
+        echo 'server {
+          listen 80;
+          location / {
+            proxy_pass http://host.docker.internal:5000;
+            proxy_set_header Host \$$host;
+            proxy_set_header X-Real-IP \$$remote_addr;
+            proxy_set_header X-Forwarded-For \$$proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto \$$scheme;
+          }
+        }' > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'
+      "
+    ports:
+      - "5001:80"
+    networks:
+      - local-genai-network
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  # Grace Agent
+  grace-agent:
+    build: 
+      context: .
+      dockerfile: Dockerfile.grace
+    container_name: grace-agent
+    ports:
+      - "8001:8001"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GENAI_BACKEND_URL=http://genai-backend:8000
+      - AGENT_NAME=Grace
+      - AGENT_PORT=8001
+      - FAMILYCONNECT_URL=http://host.docker.internal:5000
+    networks:
+      - local-genai-network
+    depends_on:
+      - familyconnect-backend
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Alex Agent  
+  alex-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile.alex
+    container_name: alex-agent
+    ports:
+      - "8002:8002"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GENAI_BACKEND_URL=http://genai-backend:8000
+      - AGENT_NAME=Alex
+      - AGENT_PORT=8002
+      - FAMILYCONNECT_URL=http://host.docker.internal:5000
+    networks:
+      - local-genai-network
+    depends_on:
+      - familyconnect-backend
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Agent Registration Service
+  agent-registrar:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: familyconnect-registrar
+    command: python register-with-genai.py
+    environment:
+      - GENAI_BACKEND_URL=http://genai-backend:8000
+    networks:
+      - local-genai-network
+    depends_on:
+      - grace-agent
+      - alex-agent
+      - genai-backend
+    restart: "no"
