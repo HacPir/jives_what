@@ -1,0 +1,40 @@
+{
+  "name": "Alex",
+  "id": "alex-familyconnect",
+  "version": "1.0.0",
+  "description": "FamilyConnect family coordinator - professional care management and family coordination",
+  "author": "FamilyConnect Team",
+  "license": "MIT",
+  "tags": [
+    "family-coordination",
+    "care-management",
+    "emergency-response",
+    "scheduling"
+  ],
+  "capabilities": [
+    "care_management",
+    "family_coordination",
+    "emergency_response",
+    "appointment_scheduling",
+    "health_monitoring"
+  ],
+  "personality": {
+    "type": "professional_coordinator",
+    "traits": [
+      "organized",
+      "efficient",
+      "reliable",
+      "proactive"
+    ],
+    "voice": "professional_male"
+  },
+  "endpoints": {
+    "chat": "http://localhost:5000/api/agents/alex/chat",
+    "health": "http://localhost:5000/api/agents/alex/health",
+    "status": "http://localhost:5000/api/agents/alex/status"
+  },
+  "model": "alex-familyconnect",
+  "provider": "FamilyConnect",
+  "created": "2025-07-13T13:32:49.946364",
+  "status": "active"
+}

@@ -1,0 +1,80 @@
+{
+  "agents": [
+    {
+      "name": "Grace",
+      "id": "grace-familyconnect",
+      "description": "FamilyConnect elderly companion - warm, caring AI for seniors",
+      "endpoint": "http://host.docker.internal:5000/api/agents/message",
+      "model": "grace-familyconnect",
+      "capabilities": [
+        "companionship",
+        "health_monitoring",
+        "family_coordination"
+      ],
+      "personality": "warm_grandmother",
+      "status": "active",
+      "provider": "FamilyConnect",
+      "version": "1.0.0",
+      "created": "2025-07-13T13:41:26.280365",
+      "request_format": {
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "userId": 1,
+          "agentId": "grace",
+          "message": "{{user_message}}"
+        }
+      },
+      "response_format": {
+        "message": "string",
+        "emotionalState": "string",
+        "suggestedActions": [
+          "string"
+        ],
+        "memoryTags": [
+          "string"
+        ]
+      }
+    },
+    {
+      "name": "Alex",
+      "id": "alex-familyconnect",
+      "description": "FamilyConnect family coordinator - professional care management",
+      "endpoint": "http://host.docker.internal:5000/api/agents/message",
+      "model": "alex-familyconnect",
+      "capabilities": [
+        "care_management",
+        "family_coordination",
+        "emergency_response"
+      ],
+      "personality": "professional_coordinator",
+      "status": "active",
+      "provider": "FamilyConnect",
+      "version": "1.0.0",
+      "created": "2025-07-13T13:41:26.280377",
+      "request_format": {
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "userId": 1,
+          "agentId": "alex",
+          "message": "{{user_message}}"
+        }
+      },
+      "response_format": {
+        "message": "string",
+        "emotionalState": "string",
+        "suggestedActions": [
+          "string"
+        ],
+        "memoryTags": [
+          "string"
+        ]
+      }
+    }
+  ]
+}

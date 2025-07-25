@@ -1,0 +1,33 @@
+# Add this to your GenAI OS docker-compose.yml
+  
+  # FamilyConnect Service
+  familyconnect:
+    build: 
+      context: ./familyconnect-agents
+      dockerfile: Dockerfile
+    container_name: familyconnect-service
+    ports:
+      - "5000:5000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+      - NODE_ENV=production
+    networks:
+      - local-genai-network
+    depends_on:
+      - backend
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/agents/message"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+# Make sure to update the volumes section to include FamilyConnect data
+volumes:
+  postgres-volume:
+  shared-files-volume:
+  redis-data:
+  familyconnect-data:  # Add this line

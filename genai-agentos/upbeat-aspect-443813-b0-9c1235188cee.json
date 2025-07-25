@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "upbeat-aspect-443813-b0",
+  "private_key_id": "9c1235188ceea5b3605ec2cf1574780249dfd53e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDBu8M03oxeRk/G\nQLd3+yOu9e3womSDwq/KUtNgMLjAZrdbnBlfd/Tw0zPad23OzmzckherpKKHBsAp\nsxvcOA/zZ6jvOpOeTFRwGUIk6eJME4e9C0ynaVx93lKKF2jxn+ItDVn3JH6+Qr9i\ns9hWTKOPVlcrZHoNMM4HwIJFef4Kh8xAeRjFtGT8ZrtzC0jz8UBiR9HK+mXJd2R7\n0UUD2DmEk7TGj8zFXN9XL1FVid2q1MzryvkhU7Wqj4gXFg5hWKMcnySsFCsU/rpZ\n/fFUCzgSjsqBTn6VcegyE+dOF2mDvCcR+NfFDtPUoXCP3PJAlIoIT+l55pCxWUTC\nF5h8xQELAgMBAAECggEACVCMxyr4FsRMq5yK9bLWeWALq6kzKf6fUxv+W76b82w8\n3qO3uJZc6YNOF+/sEKhuJYDEsJT+130kmhypd0IeyjYusinf1RmYabddLcctATlj\nKlyzt8ziDI826rrLaeqlBkOBEtfnXCB7cTRyb1vJ9WdSU5zGHYI+NbM00EBYTYs6\nV6ulPafPe+AXuMHHRSgZBTiWGDVAqRnb25vsFFxyC5nqyy3JmpSbMG4Nutt9PfQ+\nMQ5aNeZB0QY60JJuXqj/e87TCNdZStNqGOFrJfHQVo9LgNflYIDl5UQUVn9UCkXo\n87BfOXA6+k88+A2NlhCKsh37VQh+GFSEgc4LVm1saQKBgQD9b997tc4UbwzRBuDd\nm5sjO2+5jvz9J2cDrwrx4f2/uBIZvUohgF/F6bB8JVXveKj57/IBWr/vxV6YAAyW\nNO/Un9RldmF/cOiqNy8c0cw2+EoN6loDYhk5AF97coQ3l/L5xuHGbTF2pzSmfo/V\nDVXTW1y3mkNNfl/upaHRc7RKfwKBgQDDsVJzcNHUb9ATybfc7fVBr4dP/AXJnBdJ\nhq3QeAK9Y93ysNTWtIUKEdUZ2MQ2OTM0nWXSyghhngSCq5zFBd6uFjyp83PwcMOG\nfA2hIg5lu8+9eNy9dpgagRUNfIvrrWT8F44Y6hEp8yfKXnDPPKis323Bbjw8EGU9\n386lmxSLdQKBgQDIy14xUbXZErMA2YZHjgW4QFsglV1z5UgE7yaoxfiZcWlF42dc\na611zNT7R0ly1hJrE+SVliUD/0gW/dL7Hy31NDy/tq9AnWB5nAdDuiUmWEm0BL0U\neSCqvNTppa2Drmvf4eb3o4PREmDwmM20a0BYmMY44Yv5VesD1U8D97wcWQKBgQCT\ny2BR/2r53lhwGXDbUnxgV4kCR3y3f0O3LBgp0fl/v+ToXdThMwUnTcB7/NJzgU/C\n9Pzp7dvWndkaNzH3Oy+qmvDGCjAN75w7/YTtpSLqgqWqm5VbIi5OFh8oSGAEZrhW\nDBQtjNnZrOLoW9snKNDbfwMNi4vCcT+FM3qGaFFj4QKBgQCDbCdVyVRY9tk28CRd\nCR6YowEeYuT4Ti0YYMtquhZd7jaqS9rAAX8cOAL16g4FEEm5AhjHcLOBHWQ1ePxN\nKjcQObq1vEcwOWW5te2Tty5n0QKBTRz7MlhOSFuvL9uvWTylIJzOzYQyIFkti4bC\nOolJrKCygdLkDbJC/lT+qqSkTw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "calendar-agent@upbeat-aspect-443813-b0.iam.gserviceaccount.com",
+  "client_id": "107612239686441006343",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/calendar-agent%40upbeat-aspect-443813-b0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
