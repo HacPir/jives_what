@@ -1,0 +1,31 @@
+# Web Framework
+Flask==3.0.0
+
+# HTTP Requests
+requests==2.31.0
+
+# Translation
+googletrans==4.0.0-rc1
+deep-translator==1.11.4
+
+# AI/ML Libraries
+transformers==4.35.0
+torch>=2.0.0
+numpy>=1.21.0
+tokenizers>=0.14.0
+
+# Google APIs
+google-api-python-client==2.108.0
+google-auth>=2.0.0
+google-auth-oauthlib>=1.0.0
+
+# Music/Audio
+mingus==0.6.1
+
+# Environment Management
+python-dotenv==1.0.0
+
+# Development Tools (Optional)
+# pytest==7.4.0
+# black==23.0.0
+# flake8==6.0.0
